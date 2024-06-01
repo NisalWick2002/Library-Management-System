@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="70a62723-6721-4ff9-87cc-3600de081a5b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT receiptID, studentID, resourceID, dueDate FROM Receipt  JOIN Transaction  ON Receipt.transactionID = Transaction.transactionID;]]>
+	</queryString>
+	<field name="receiptID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="studentID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="resourceID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dueDate" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="45" y="2" width="100" height="20" uuid="da03027e-fbc8-4939-a55c-10547da45b50"/>
+				<text><![CDATA[receiptID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="2" width="100" height="20" uuid="b4831126-bb46-4ad2-954b-d2ce48abf29f"/>
+				<text><![CDATA[studentID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="302" y="2" width="100" height="20" uuid="b6182727-43d8-40da-884d-d717efa17c6f"/>
+				<text><![CDATA[resourceID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="433" y="0" width="100" height="20" uuid="bc4a26f7-bfe6-4fdd-a28f-807b8bbae386"/>
+				<text><![CDATA[dueDate]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="45" y="11" width="100" height="20" uuid="f8ed26a5-125e-403e-9fdd-5a15b7cbfd54"/>
+				<textFieldExpression><![CDATA[$F{receiptID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="11" width="100" height="20" uuid="4f61f9ac-38b0-45fb-9fa7-ba5b410d3f02"/>
+				<textFieldExpression><![CDATA[$F{studentID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="302" y="11" width="100" height="20" uuid="ed4beb8d-1c12-455e-96fb-705b1acc6f7e"/>
+				<textFieldExpression><![CDATA[$F{resourceID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="433" y="11" width="100" height="20" uuid="8095ce61-0722-4dbf-bb80-9573ca767a19"/>
+				<textFieldExpression><![CDATA[$F{dueDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
