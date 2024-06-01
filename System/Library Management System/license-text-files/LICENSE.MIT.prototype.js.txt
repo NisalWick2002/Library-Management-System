@@ -1,0 +1,4 @@
+Prototype is Copyright © 2005-2007 Sam Stephenson. 
+
+It is freely distributable under the terms of an MIT-style license.
+  

@@ -1,0 +1,22 @@
+A section of the utils.common.js file uses code from 
+the book:
+
+"JavaScript: The Good Parts by Douglas Crockford"
+"Copyright 2008 Yahoo! Inc.,978-0-596-51774-8."
+
+Here are the relevant sections from the book's preface
+First Edition May 2008. Preface pages 1, 2.
+
+
+P2.2. Using Code Examples
+
+This book is here to help you get your job done. In general, you may use the code in this book in your
+programs and documentation. You do not need to contact us for permission. For example, writing a program
+that uses several chunks of code from this book does not require permission.
+
+
+We appreciate, but do not require, attribution. An attribution usually includes the title, author, publisher, and
+ISBN. For example: "JavaScript: The Good Parts by Douglas Crockford. Copyright 2008 Yahoo! Inc.,
+978-0-596-51774-8."
+
+
