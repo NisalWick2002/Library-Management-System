@@ -3,7 +3,6 @@ Advanced Java-based Library Management System with user roles, secure login, mod
 
 # Library-Management-System
 
-
 ## Content
 
 - [Overview](https://github.com/NisalWick2002/Library-Management-System?tab=readme-ov-file#overview-)
